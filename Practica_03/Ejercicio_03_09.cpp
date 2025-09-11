@@ -1,3 +1,10 @@
+//Materia: Programacion I, Paralelo 4
+//Autor: Georgina Mishel Espinoza Mamani
+//Carnet: 9979732 L.P.
+//Carrera de estudiante: Ingenieria de Mecatronica
+//Fecha creacion: 11/09/2025
+//Numero de ejercicio: 9
+
 #include <iostream>
 
 
@@ -9,14 +16,14 @@ double tiempoTrabajado(int minutos){
     return horas - 8.0;
 }
 
-void mostrarResultado () {
+void mostrarResultado () {//no es necesario return
     cout << "Ingrese la cantidad de minutos trabajados" << endl;
     int minutos;
     cin >> minutos;
     
     double horas = tiempoTrabajado(minutos);
     
-    if(horas == 0){
+    if(horas == 0){//condicion
         cout << "Ha trabajado 8 horas exactas" << endl;
     } else if (horas < 0){
         cout << "Ha trabajado menos horas" << endl;

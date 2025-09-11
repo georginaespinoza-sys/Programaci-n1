@@ -1,3 +1,10 @@
+//Materia: Programacion I, Paralelo 4
+//Autor: Georgina Mishel Espinoza Mamani
+//Carnet: 9979732 L.P.
+//Carrera de estudiante: Ingenieria de Mecatronica
+//Fecha creacion: 11/09/2025
+//Numero de ejercicio: 8
+
 #include <iostream>
 
 using namespace std;
@@ -5,7 +12,7 @@ using namespace std;
 //valores del corte: 200, 100, 50, 20, 10, 5, 2, 1
 int algoritmo (int corte, int dinero){
     if(dinero >= corte){
-        int cantidad = dinero / corte;
+        int cantidad = dinero / corte;//operacion
         return cantidad;
     } else {
         return 0;
@@ -19,7 +26,7 @@ int main()
     cout << "Ingrese la cantidad de dinero: " << endl;
     cin >> n;
     
-    int c = algoritmo(200, n);
+    int c = algoritmo(200, n);//instrucciones
     if(c > 0){
         cout << c << " billetes de 200 Bs" << endl;
         n = n - (c * 200);

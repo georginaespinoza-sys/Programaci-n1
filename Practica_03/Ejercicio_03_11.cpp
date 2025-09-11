@@ -1,14 +1,21 @@
+//Materia: Programacion I, Paralelo 4
+//Autor: Georgina Mishel Espinoza Mamani
+//Carnet: 9979732 L.P.
+//Carrera de estudiante: Ingenieria de Mecatronica
+//Fecha creacion: 11/09/2025
+//Numero de ejercicio: 11
+
 #include <iostream>
 
 using namespace std;
 
-double retirarDinero (double saldo, int cantidad){
+double retirarDinero (double saldo, int cantidad){//nombrar
     if(saldo < cantidad){
         cout << "No tiene saldo suficiente" << endl;
         return 0.0;
     }
     
-    if(cantidad % 10 != 0){
+    if(cantidad % 10 != 0){//si la cantidad es modulo de 10 y diferente a 0
         cout << "La cantidad no es valida para retirar" << endl;
         return 0.0;
     }
