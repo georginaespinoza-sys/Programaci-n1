@@ -1,11 +1,18 @@
+//Materia: Programacion I, Paralelo 4
+//Autor: Georgina Mishel Espinoza Mamani
+//Carnet: 9979732 L.P.
+//Carrera de estudiante: Ingenieria de Mecatronica
+//Fecha creacion: 11/09/2025
+//Numero de ejercicio: 5
+
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
+#include <cstdlib>//sran y rand
+#include <ctime>//time
 
 using namespace std;
 
 double promedioPonderado(int n1, int n2, int n3, int n4){
-    double nota1 = n1 * 10.0;
+    double nota1 = n1 * 10.0;//operaciones
     double nota2 = n2 * 20.0;
     double nota3 = n3 * 30.0;
     double nota4 = n4 * 40.0;
@@ -20,9 +27,9 @@ double promedioPonderado(int n1, int n2, int n3, int n4){
 
 int main()
 {
-    srand(time(NULL));
+    srand(time(NULL));//numero aleatorio
     
-    int n1 = rand() % (101);
+    int n1 = rand() % (101);// numero aleatorio modulo 100 +1
     int n2 = rand() % (101);
     int n3 = rand() % (101);
     int n4 = rand() % (101);
