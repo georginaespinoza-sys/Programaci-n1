@@ -2,7 +2,7 @@
 // Autor: Georgina Mishel Espinoza Mamani
 // Carnet: 9979732 L.P.
 // Carrera del estudiante: Ingeniería de Mecatrónica
-// Fecha creación: 22/08/2025
+// Fecha creación: 14/09/2025
 // Número de ejercicio: 1
 
 #include <iostream>
