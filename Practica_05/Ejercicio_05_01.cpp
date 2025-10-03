@@ -1,7 +1,7 @@
 // Materia: Programación I, Paralelo 4
 // Autor: Georgina Mishel Espinoza Mamani
 // Carnet: 9979732 L.P.
-// Carrera: Ingenieria Mectrónica
+// Carrera: Ingenieria Mecatrónica
 // Fecha creación: 03/10/2025
 // Número de ejercicio: 1
 //Problema planteado:Escriba un programa con 6 funciones utilizando vectores para lo siguiente:
@@ -11,7 +11,7 @@
 //d. Una lista de 100 años en número entero (entre 1990 y 2025)
 //e. Una lista de 32 velocidades de precisión doble (entre 10.00 y 300.00)
 //f. Una lista de 1000 distancias de precisión doble (entre 1.00 a 1000.00)
-//Los datos debes ser generados utilizando numero aleatorios.vector<char> listaDeAlfanumericos = Alfanumericos();// llamar a la funcion
+//Los datos debes ser generados utilizando numero aleatorios
    
 
 #include <iostream>
