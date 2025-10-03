@@ -1,6 +1,8 @@
 // Materia: Programación I, Paralelo 4
 // Autor: Georgina Mishel Espinoza Mamani
-// Fecha creación: 30/09/2025
+// Carnet: 9979732 L.P.
+// Carrera: Ingenieria Mectrónica
+// Fecha creación: 03/10/2025
 // Número de ejercicio: 1
 //Problema planteado:Escriba un programa con 6 funciones utilizando vectores para lo siguiente:
 //a. Una lista de 100 voltajes de precisión doble (entre 20.00 V y 220.00 V)
@@ -9,7 +11,8 @@
 //d. Una lista de 100 años en número entero (entre 1990 y 2025)
 //e. Una lista de 32 velocidades de precisión doble (entre 10.00 y 300.00)
 //f. Una lista de 1000 distancias de precisión doble (entre 1.00 a 1000.00)
-//Los datos debes ser generados utilizando numero aleatorios.
+//Los datos debes ser generados utilizando numero aleatorios.vector<char> listaDeAlfanumericos = Alfanumericos();// llamar a la funcion
+   
 
 #include <iostream>
 #include <vector>
@@ -56,26 +59,32 @@ vector<double> CincuentaTempe() {//b
 }
 
 
-vector<char> Alfanumericos() {
+vector<char> Alfanumericos() {//c
+    vector<char> alfanumericos;//declarar vector para 30 alfanumericos
     vector<char> caracteres;
-    int cantidad = 30;
-
-    for (int i = 0; i < cantidad; ++i) {
-        // Genera un índice aleatorio de 0 a 61 (10 números + 26 mayúsculas + 26 minúsculas).
-        int indice = rand() % 62; 
-        
-        char c;
-        if (indice < 10) { // Mapeo a números '0' a '9'
-            c = '0' + indice;
-        } else if (indice < 36) { // Mapeo a letras mayúsculas 'A' a 'Z'
-            c = 'A' + (indice - 10);
-        } else { // Mapeo a letras minúsculas 'a' a 'z'
-            c = 'a' + (indice - 36);
-        }
-        
-        caracteres.push_back(c);
+    for(int i = 0; i < 26; i++){//codigo ASCII
+        caracteres.push_back('A' + i);
     }
-    return caracteres;
+    
+    for(int i = 0; i < 26; i++){
+        caracteres.push_back('a' + i);
+    }
+    
+    for(int i = 0; i < 10; i++){
+        caracteres.push_back('0' + i);
+    }
+    
+    int min_alfanumerico = 0.00;//limites
+    int max_alfanumerico = 62.00;
+
+    for (int i = 0; i < 30; ++i) {//generar
+        
+        int rango = max_alfanumerico - min_alfanumerico;
+        int aleatorio_normalizado = rand() % (max_alfanumerico - min_alfanumerico) + min_alfanumerico;
+        char alf = caracteres[aleatorio_normalizado];
+        alfanumericos.push_back(alf);
+    }
+    return alfanumericos;
 }
 
 
@@ -149,13 +158,10 @@ int main() {
         cout << "Temperatura " << (i + 1) << ": " << listaDeTemperatura[i] << " t\n";
     }
 
-    vector<char> lista_caracteres = Alfanumericos();
-    cout << "Lista de 30 Caracteres Alfanumericos:\n";
-    for (int i = 0; i < lista_caracteres.size(); ++i) {
-        cout << "Caracter "<<(i + 1)<<": "<<lista_caracteres[i]<<"\n";
-        if (i < lista_caracteres.size() - 1) {
-            cout << " "; 
-        }
+    vector<char> listaDeAlfanumericos = Alfanumericos();// llamar a la funcion
+    cout << "Lista de 30 alfanumericos:\n";
+    for (int i = 0; i < listaDeAlfanumericos.size(); ++i) {
+        cout << "Alfanumerico " << (i + 1) << ": " << listaDeAlfanumericos[i] << "\n";
     }
 
     vector<int> listaDeAnios = CienAnios();// llamar a la funcion
