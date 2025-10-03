@@ -1,13 +1,15 @@
 // Materia: Programación I, Paralelo 4
 // Autor: Georgina Mishel Espinoza Mamani
-// Fecha creación: 30/09/2025
+// Carnet: 9979732 L.P.
+// Carrera: Ingenieria Mecatrónica
+// Fecha creación: 03/10/2025
 // Número de ejercicio: 2
-//Problema planteado: Escriba un programa para introducir los siguientes valores en un arreglo nombrado
-//voltios: 11.95, 16.32, 12.15, 8.22, 15.98, 26.22, 13.54, 6.45, 17.59. 
-//Después que se hayan introducido los datos, haga que su programa despliegue los valores.
-//11.95   16.32   12.15
-//8.22    15.98   26.22
-//13.54   6.45    17.59
+// Problema planteado: Escriba un programa para introducir los siguientes valores en un arreglo nombrado
+// voltios: 11.95, 16.32, 12.15, 8.22, 15.98, 26.22, 13.54, 6.45, 17.59. 
+// Después que se hayan introducido los datos, haga que su programa despliegue los valores.
+// 11.95   16.32   12.15
+// 8.22    15.98   26.22
+// 13.54   6.45    17.59
 
 #include <iostream>
 #include <vector>
@@ -22,7 +24,7 @@ void desplegarVoltajes(vector<double>& voltajes, int columnas) {//vector<double>
         cout << voltajes[i];
 
         if ((i + 1) % columnas == 0) {//% devuelve el resto de la división entre la posición actual y el número de columnas
-            cout << "\n"; 
+            cout << endl; 
         } else {
             cout << "\t"; 
         }
