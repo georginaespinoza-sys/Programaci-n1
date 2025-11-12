@@ -1,0 +1,16 @@
+Nombre: Gabriel
+Edad: 13
+Promedio: 79.9
+
+Nombre: Lucia
+Edad: 14
+Promedio: 78.8
+
+Nombre: Rebeca
+Edad: 13
+Promedio: 80
+
+Nombre: Alfonzo
+Edad: 13
+Promedio: 76.7
+

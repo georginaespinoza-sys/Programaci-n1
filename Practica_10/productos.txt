@@ -1,0 +1,11 @@
+carne 80
+pollo 50
+atun 12
+tomate 13
+cebolla 20
+arroz 20
+fideo 22
+lechuga 10
+cerdo 60
+limon 7
+aderezos 34
